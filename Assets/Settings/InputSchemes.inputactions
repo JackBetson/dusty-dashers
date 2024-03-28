@@ -6,13 +6,22 @@
             "id": "47ba5319-17a1-4b5d-b80d-466436332dfa",
             "actions": [
                 {
-                    "name": "Cursor",
+                    "name": "Cursor Move",
                     "type": "Value",
                     "id": "d153e471-2197-4b95-a6b3-0b97b9e32e43",
                     "expectedControlType": "Vector2",
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": true
+                },
+                {
+                    "name": "Select Item",
+                    "type": "Button",
+                    "id": "08b6ba75-dbde-4a3a-96b4-70680194eeff",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -23,7 +32,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Cursor",
+                    "action": "Cursor Move",
                     "isComposite": true,
                     "isPartOfComposite": false
                 },
@@ -34,7 +43,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Cursor",
+                    "action": "Cursor Move",
                     "isComposite": false,
                     "isPartOfComposite": true
                 },
@@ -45,7 +54,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Cursor",
+                    "action": "Cursor Move",
                     "isComposite": false,
                     "isPartOfComposite": true
                 },
@@ -56,7 +65,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Cursor",
+                    "action": "Cursor Move",
                     "isComposite": false,
                     "isPartOfComposite": true
                 },
@@ -67,29 +76,29 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Cursor",
+                    "action": "Cursor Move",
                     "isComposite": false,
                     "isPartOfComposite": true
                 },
                 {
                     "name": "",
-                    "id": "11569062-f66d-4b5c-a8e6-e3fc7b661234",
-                    "path": "<Mouse>/delta",
+                    "id": "d50a1d26-1a85-42bc-be8b-f5041cd1ec93",
+                    "path": "<Gamepad>/leftStick",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Cursor",
+                    "action": "Cursor Move",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
                 {
                     "name": "",
-                    "id": "d50a1d26-1a85-42bc-be8b-f5041cd1ec93",
-                    "path": "<Gamepad>/rightStick",
+                    "id": "44b26d3f-8ca8-4389-a430-0059e164aab0",
+                    "path": "<Gamepad>/buttonSouth",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Cursor",
+                    "action": "Select Item",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
