@@ -1,21 +1,34 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerInput : MonoBehaviour
 {
-    public string verticalAxisName = "Vertical";       // name of the thruster axis
+    public string verticalAxisName = "Vertical";        // name of the thruster axis
     public string horizontalAxisName = "Horizontal";    // name of the rudder axis
 
     [HideInInspector] public float thruster;    // current thruster value
     [HideInInspector] public float rudder;      // current rudder value
 
+    public Slider thrustSlider;
+
+    void Start()
+    {
+        // Add a listener to the thrust slider and invoke a method when the value changes
+        thrustSlider.onValueChanged.AddListener(delegate { ValueChangeCheck(); });
+    }
+
+    public void ValueChangeCheck()
+    {
+        Debug.Log(thrustSlider.value);
+        // Get thrust value from slider
+        thruster = thrustSlider.value;
+    }
 
     // Update is called once per frame
     void Update()
     {
-
-
         // if GameManager exists and game is not active...
         if (GameManager.instance != null && !GameManager.instance.IsActiveGame())
         {
@@ -26,7 +39,7 @@ public class PlayerInput : MonoBehaviour
         }
 
         // Get the thruster input, rudder, and braking input
-        thruster = Input.GetAxis(verticalAxisName);
+        // thruster = Input.GetAxis(verticalAxisName); // Use to test with manual input (w for thrust)
         rudder = Input.GetAxis(horizontalAxisName);
     }
 }
