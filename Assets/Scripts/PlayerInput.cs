@@ -11,21 +11,25 @@ public class PlayerInput : MonoBehaviour
     [HideInInspector] public float thruster;    // current thruster value
     [HideInInspector] public float rudder;      // current rudder value
 
-    public Slider thrustSlider;
+    public Slider thrustSlider, streeringSlider;
 
     void Start()
     {
         // Add a listener to the thrust slider and invoke a method when the value changes
         thrustSlider.onValueChanged.AddListener(delegate { ValueChangeCheck(); });
+        streeringSlider.onValueChanged.AddListener(delegate { ValueChangeCheck(); });
     }
 
     public void ValueChangeCheck()
     {
-        Debug.Log(thrustSlider.value);
         // Get thrust value from slider
+        Debug.Log(thrustSlider.value);
         thruster = thrustSlider.value;
-    }
 
+        // Get rudder value from slider
+        Debug.Log(thrustSlider.value);
+        rudder = streeringSlider.value;
+    }
     // Update is called once per frame
     void Update()
     {
@@ -40,6 +44,6 @@ public class PlayerInput : MonoBehaviour
 
         // Get the thruster input, rudder, and braking input
         // thruster = Input.GetAxis(verticalAxisName); // Use to test with manual input (w for thrust)
-        rudder = Input.GetAxis(horizontalAxisName);
+        // rudder = Input.GetAxis(horizontalAxisName); // Use to test with manual input (a + d for steering)
     }
 }
