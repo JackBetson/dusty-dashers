@@ -31,7 +31,7 @@
                     "path": "<Gamepad>/leftStick",
                     "interactions": "",
                     "processors": "",
-                    "groups": "",
+                    "groups": "Main Controller Scheme",
                     "action": "Cursor Movement",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -42,7 +42,7 @@
                     "path": "<Gamepad>/buttonSouth",
                     "interactions": "",
                     "processors": "",
-                    "groups": "",
+                    "groups": "Main Controller Scheme",
                     "action": "Select",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -52,8 +52,8 @@
     ],
     "controlSchemes": [
         {
-            "name": "New control scheme",
-            "bindingGroup": "New control scheme",
+            "name": "Main Controller Scheme",
+            "bindingGroup": "Main Controller Scheme",
             "devices": [
                 {
                     "devicePath": "<Gamepad>",
