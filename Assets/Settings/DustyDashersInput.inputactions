@@ -7,20 +7,38 @@
             "actions": [
                 {
                     "name": "Cursor Movement",
-                    "type": "Value",
+                    "type": "PassThrough",
                     "id": "d1dc3985-59bd-45eb-a853-c243c6fab9d5",
                     "expectedControlType": "Vector2",
                     "processors": "",
                     "interactions": "",
-                    "initialStateCheck": true
+                    "initialStateCheck": false
                 },
                 {
                     "name": "Select",
-                    "type": "Button",
+                    "type": "PassThrough",
                     "id": "beb539db-fd59-4890-8d03-2d79d0e4a1b4",
                     "expectedControlType": "Button",
                     "processors": "",
-                    "interactions": "Hold",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Arrow Navigate",
+                    "type": "PassThrough",
+                    "id": "dd3a5eef-c757-4cc2-b124-077977547ed6",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Join",
+                    "type": "Button",
+                    "id": "993e3a2f-4267-4eba-a216-cdf73b645fdf",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
                     "initialStateCheck": false
                 }
             ],
@@ -31,7 +49,7 @@
                     "path": "<Gamepad>/leftStick",
                     "interactions": "",
                     "processors": "",
-                    "groups": "Main Controller Scheme",
+                    "groups": "",
                     "action": "Cursor Movement",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -42,8 +60,30 @@
                     "path": "<Gamepad>/buttonSouth",
                     "interactions": "",
                     "processors": "",
-                    "groups": "Main Controller Scheme",
+                    "groups": "",
                     "action": "Select",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "f3ef5db2-cb73-4d93-9bd0-524fedee776e",
+                    "path": "<Gamepad>/dpad",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Arrow Navigate",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "012e8815-8312-4823-8954-6c2b94305985",
+                    "path": "<Gamepad>/start",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Join",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
