@@ -1,8 +1,8 @@
 {
-    "name": "PlayerCursor",
+    "name": "PlayerCursor1",
     "maps": [
         {
-            "name": "Player",
+            "name": "Player1",
             "id": "5f5d25f0-ec14-45b9-855e-d889f71b58df",
             "actions": [
                 {
