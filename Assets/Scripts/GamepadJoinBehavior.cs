@@ -44,8 +44,8 @@ public class GamepadJoinBehavior : MonoBehaviour
         //UnityEngine.Debug.Log(device.device);
 
         // Don't execute if not a gamepad or joystick
-        // if (!device.displayName.Contains("Controller") && !device.displayName.Contains("Joystick") && !device.displayName.Contains("Gamepad"))
-        //     return;
+        if (!device.displayName.Contains("Controller") && !device.displayName.Contains("Joystick") && !device.displayName.Contains("Gamepad"))
+            return;
 
         var playerNumberToAdd = PlayerInput.all.Count + 1;
 
