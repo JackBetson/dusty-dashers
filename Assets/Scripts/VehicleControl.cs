@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class PlayerInput : MonoBehaviour
+public class VehicleControl : MonoBehaviour
 {
     public string verticalAxisName = "Vertical";        // name of the thruster axis
     public string horizontalAxisName = "Horizontal";    // name of the rudder axis

@@ -19,13 +19,13 @@ public class VehicleMovement : MonoBehaviour
     public PIDController hoverPID;          // PID controller used to smooth the hovering of the vehicle
 
     [Header("Physics Settings")]
-    public Transform vehicleBody;              // reference to the vehicle's body for cosmetics
-    public float terminalVelocity = 100f;    // max speed the vehicle can go
-    public float hoverGravity = 5f;        // gravity applied to the vehicle while it is on the ground
+    public Transform vehicleBody;           // reference to the vehicle's body for cosmetics
+    public float terminalVelocity = 100f;   // max speed the vehicle can go
+    public float hoverGravity = 5f;         // gravity applied to the vehicle while it is on the ground
     public float fallGravity = 40f;         // gravity applied to the vehicle while it is falling
 
     Rigidbody vehicleRigidBody;             // reference to the vehicle rigidbody
-    PlayerInput input;                      // reference to the player input script
+    VehicleControl input;                   // reference to the Vehicle Control script
     float drag;                             // drag of the vehicle rigidbody when moving forward
     bool isOnGround;                        // whether the vehicle is currently on the ground
 
@@ -34,8 +34,8 @@ public class VehicleMovement : MonoBehaviour
         // Get the rigidbody component
         vehicleRigidBody = GetComponent<Rigidbody>();
 
-        // Get the player input script
-        input = GetComponent<PlayerInput>();
+        // Get the Vehicle Control script
+        input = GetComponent<VehicleControl>();
 
         // Calculate the drag value
         drag = driveForce / terminalVelocity;
