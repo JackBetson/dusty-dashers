@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - PlayerCursor
+  - InputManager
+  - Death
   layers:
   - Default
   - TransparentFX
