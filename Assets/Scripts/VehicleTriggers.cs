@@ -13,9 +13,5 @@ public class VehicleTriggers : MonoBehaviour
             transform.position = spawnPointTransform.position;
             transform.rotation = spawnPointTransform.rotation;
         }
-        else if (other.name == "End Point")
-        {
-            Debug.Log("You win!");
-        }
     }
 }
