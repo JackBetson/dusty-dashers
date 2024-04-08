@@ -91,7 +91,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ca2f99bece6f1ac4aa9714c9bbf7c0bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cursorSpeed: 50
+  cursorSpeed: 800
   objectSelected: 0
   playerSelection: {fileID: 0}
 --- !u!114 &6914592580568750532
